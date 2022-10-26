@@ -4,7 +4,7 @@ namespace Chores.Models;
 
 public class Chore
 {
-  public string Id { get; private set; }
+  public int Id { get; set; }
 
   public string Name { get; private set; }
 
@@ -28,7 +28,6 @@ public class Chore
   }
   public Chore(string name, int amount, bool done, ChoreType type)
   {
-    Id = Guid.NewGuid().ToString();
     Name = name;
     Done = done;
     Amount = amount;

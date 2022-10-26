@@ -13,12 +13,7 @@ public class ChoresService
 
   public Chore GetChore(string id)
   {
-    var chore = _db.Chores.Find(c => c.Id == id);
-    if (chore == null)
-    {
-      throw new Exception("Invalid ID");
-    }
-    return chore;
+
   }
 
 
