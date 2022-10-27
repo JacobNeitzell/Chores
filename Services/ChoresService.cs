@@ -13,7 +13,11 @@ public class ChoresService
 
   public Chore GetChore(string id)
   {
-
+    var chore = _choreRepo.get(id);
+    if (chore == null)
+    {
+      throw
+    }
   }
 
 
